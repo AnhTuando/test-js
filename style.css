@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  background-color: #1b1b1b;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* tittle */
+.post-title {
+  margin-top: 20px;
+  color: aliceblue;
+}
+.search {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 0px 10px;
+}
+.search i {
+  color: #333;
+  font-size: 25px;
+}
+.search input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  padding: 0px 10px;
+  border: none;
+}
+.search input:focus {
+  outline: none;
+}
+.wrap-activity {
+  display: flex;
+}
+.add-post,
+.delete-posts {
+  height: 40px;
+  line-height: 40px;
+  background-color: #2c2c2c;
+  font-size: 18px;
+  margin: 0px 20px;
+  padding: 0px 10px;
+  color: aliceblue;
+}
+.add-post:hover,
+.delete-post:hover,
+.delete-posts:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* Row */
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.item {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  width: 900px;
+  padding: 20px;
+}
+.item .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.item .content {
+  font-size: 15px;
+}
+.tag {
+  margin: 10px 0px;
+}
+.tag-name {
+  background-color: #3b3b3b;
+  padding: 5px;
+}
+.delete-post {
+  height: 50px;
+
+  background-color: #2c2c2c;
+  font-size: 18px;
+  margin: 0;
+  color: rgb(248, 29, 0);
+}
+.delete-post i {
+  font-size: 30px;
+  line-height: 50px;
+}
+/* Post Form */
+.post-form {
+  width: 900px;
+}
+.user-id-form,
+.content-form,
+.tag-form {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 30px 0px;
+  height: 30px;
+}
+label {
+  line-height: 30px;
+}
+
+.user-id-form input,
+.content-form input,
+.tag-form input {
+  width: 400px;
+}
+.user-id-form input:focus,
+.content-form input:focus,
+.tag-form input:focus {
+  outline: none;
+}
+.add-btn {
+  background-color: aliceblue;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.8;
+}
+.add-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.update-post-btn {
+  height: 40px;
+  line-height: 40px;
+  background-color: #6d6d6d;
+  font-size: 18px;
+  width: 80px;
+
+  text-align: center;
+  color: aliceblue;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+.update-post:hover {
+  opacity: 0.8;
+}
+.update-content {
+  width: 100%;
+  background-color: #525252;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 20px;
+  font-size: 15px;
+}
+.update-content:focus {
+  outline: none;
+}
+/* JS Event */
+.none {
+  display: none;
+}
